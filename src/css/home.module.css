@@ -1,0 +1,16 @@
+.title {
+    margin-top: 55px;
+    font-family: 'Argentum Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    color: #181818;
+}
+
+.buttonDiv {
+    margin-top: 32px;
+    width: 100%;
+    text-align: center;
+}

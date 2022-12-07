@@ -1,0 +1,67 @@
+.list {
+    background: #4563E6;
+    border-radius: 10px;
+    padding: 12px 30px 30px 30px;
+    font-family: 'Argentum Sans';
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    max-width: 690px;
+    margin: auto;
+    margin-top: 96px;
+}
+
+.list table {
+    width: 100%;
+    border-collapse: collapse;
+    text-indent: initial;
+    margin-bottom: 5px;
+}
+
+.list th {
+    border-bottom: 4px solid #C4C4C4;
+    font-weight: 300;
+    width: 33%;
+    padding-bottom: 12px;
+}
+
+.list .center {
+    text-align: center;
+}
+
+.list .left {
+    text-align: left;
+}
+
+.list .right {
+    text-align: right;
+}
+
+.list td {
+    padding: 2px 10px;
+}
+
+.list td:first-child {
+    text-align: left;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.list td:last-child {
+    text-align: right;
+    font-weight: 500;
+}
+
+.list td:nth-child(2) div {
+    text-align: center;
+    margin: 10px 0;
+    border-left: 4px solid #C4C4C4;
+    border-right: 4px solid #C4C4C4;
+}
+
+.list tr:not(:first-child) {
+    border-top: 1px solid #C4C4C4;
+}
