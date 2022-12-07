@@ -9,7 +9,7 @@ const Home = () => {
   const onClose = () => {
     setOpen(false);
   };
-  const onClick = () => {
+  const onOpen = () => {
     setOpen(true);
   };
   return (
@@ -18,7 +18,7 @@ const Home = () => {
       <h1 className={style.title}>Generador de Reportes TK</h1>
       <ListReport />
       <div className={style.buttonDiv}>
-        <Button onClick={onClick}>Crear reporte</Button>
+        <Button onClick={onOpen}>Crear reporte</Button>
       </div>
       {open && <PopUp onClose={onClose}></PopUp>}
     </div>

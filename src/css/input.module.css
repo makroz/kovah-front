@@ -76,3 +76,11 @@
     right: 10px;
     z-index: 1;
 }
+
+.div .error {
+    color: crimson;
+}
+
+.div .success {
+    color: darkgreen;
+}
