@@ -1,7 +1,7 @@
 .list {
     background: #4563E6;
     border-radius: 10px;
-    padding: 12px 30px 30px 30px;
+    padding: 12px 33px 30px 33px;
     font-family: 'Argentum Sans';
     font-style: normal;
     font-weight: 300;
@@ -9,9 +9,9 @@
     font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;
-    max-width: 690px;
+    max-width: 699px;
     margin: auto;
-    margin-top: 96px;
+    margin-top: 105px;
 }
 
 .list table {
@@ -24,7 +24,6 @@
 .list th {
     border-bottom: 4px solid #C4C4C4;
     font-weight: 300;
-    width: 33%;
     padding-bottom: 12px;
 }
 
@@ -42,6 +41,14 @@
 
 .list td {
     padding: 2px 10px;
+}
+
+.list th:first-child {
+    width: 32.8%;
+}
+
+.list th:last-child {
+    width: 28.8%;
 }
 
 .list td:first-child {

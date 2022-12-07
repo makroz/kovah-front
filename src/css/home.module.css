@@ -1,12 +1,13 @@
 .title {
-    margin-top: 55px;
+    margin-top: 64px;
     font-family: 'Argentum Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 30px;
     line-height: 33px;
     text-align: center;
     color: #181818;
+    letter-spacing: 0.90px;
 }
 
 .buttonDiv {
