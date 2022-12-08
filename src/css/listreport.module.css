@@ -72,3 +72,13 @@
 .list tr:not(:first-child) {
     border-top: 1px solid #C4C4C4;
 }
+
+.list a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.list a:hover {
+    text-decoration: underline;
+    color: #FFBE12;
+}

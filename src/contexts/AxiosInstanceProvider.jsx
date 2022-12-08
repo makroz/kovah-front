@@ -7,10 +7,7 @@ const AxiosInstanceProvider = ({
   interceptors = null,
   children,
 }) => {
-  const API_URL =
-    process.env.NODE_ENV === "development"
-      ? "http://localhost:8000/api"
-      : "http://localhost:8000/api";
+  const API_URL = process.env.REACT_APP_API_URL || "http://localhost:8000/api";
   if (!config.baseURL) {
     config = { ...config, baseURL: API_URL };
   }
