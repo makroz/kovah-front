@@ -12,6 +12,7 @@ const ListReport = () => {
 
   return (
     <div className={style.list}>
+      red {import.meta.env.REACT_APP_API_URL}
       <table>
         <thead>
           <tr>
