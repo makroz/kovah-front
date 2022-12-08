@@ -9,8 +9,8 @@ const AxiosInstanceProvider = ({
 }) => {
   const API_URL =
     process.env.NODE_ENV === "development"
-      ? "http://localhost:8080/admin/api"
-      : "http://localhost:8080/admin/api";
+      ? "http://localhost:8000/api"
+      : "http://localhost:8000/api";
   if (!config.baseURL) {
     config = { ...config, baseURL: API_URL };
   }
