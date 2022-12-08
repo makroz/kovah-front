@@ -2,7 +2,7 @@ import useAxios from "../hooks/useAxios";
 import style from "../css/listreport.module.css";
 import { getDateStr } from "../utils/date";
 const ListReport = () => {
-  const { data, error, loaded } = useAxios("/list-reports", "GET", {});
+  const { data, error, loaded } = useAxios("/list-reports", "GET", {}, false);
   if (error)
     return (
       <div className={style.list}>An Error Network occured... try again...</div>
@@ -12,7 +12,6 @@ const ListReport = () => {
 
   return (
     <div className={style.list}>
-      red {import.meta.env.REACT_APP_API_URL}
       <table>
         <thead>
           <tr>
@@ -22,9 +21,14 @@ const ListReport = () => {
           </tr>
         </thead>
         <tbody>
-          {!data && (
+          {data.length == 0 && (
             <tr>
-              <td colSpan="3">Empty data</td>
+              <td colSpan="3">
+                <br />
+                <br />
+                <br />
+                <div className={style.center}>Empty data</div>
+              </td>
             </tr>
           )}
           {loaded &&
