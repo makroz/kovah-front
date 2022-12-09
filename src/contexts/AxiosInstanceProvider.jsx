@@ -12,7 +12,7 @@ const AxiosInstanceProvider = ({
     config = { ...config, baseURL: API_URL };
   }
   const instanceRef = useRef(axios.create(config));
-
+  instanceRef.current.defaults.withCredentials = true;
   useEffect(() => {
     if (interceptors) {
       interceptors(instanceRef.current);

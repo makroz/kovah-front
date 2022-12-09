@@ -20,6 +20,10 @@ const axiosInterceptors = (instance) => {
       return response;
     },
     (error) => {
+      if (error.response.status === 401) {
+        window.location = "/login";
+      }
+      console.error("error error:", error);
       return Promise.reject(error);
     }
   );

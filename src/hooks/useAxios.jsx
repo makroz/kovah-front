@@ -14,8 +14,7 @@ const useAxios = (url = null, method = "GET", payload = {}) => {
   const cancel = () => {
     controllerRef.current.abort();
   };
-
-  const execute = async (url = url, method = method, payload = payload) => {
+  const execute = async (url = url, method = method, payload) => {
     setLoaded(false);
     let data = null;
     try {
